@@ -35,6 +35,12 @@ class OrderComponent extends Component
         $this->orders = Order::latest()->get();
     }
 
+    public function delete($orderId)
+    {
+        Order::findOrFail($orderId)->delete();
+        session()->flash('message', 'Order deleted successfully.');
+        $this->orders = Order::latest()->get();
+    }
     public function render()
     {
         return view('livewire.order-component', [
