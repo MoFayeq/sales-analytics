@@ -70,7 +70,6 @@
     <table class="min-w-full border">
         <thead class="bg-gray-100">
             <tr>
-                <th class="px-4 py-2">ID</th>
                 <th class="px-4 py-2">Product ID</th>
                 <th class="px-4 py-2">Quantity</th>
                 <th class="px-4 py-2">Price</th>
@@ -81,7 +80,6 @@
         <tbody>
             @foreach($orders as $order)
                 <tr class="border-t">
-                    <td class="px-4 py-2">{{ $order->id }}</td>
                     <td class="px-4 py-2">{{ $order->product_id }}</td>
                     <td class="px-4 py-2">{{ $order->quantity }}</td>
                     <td class="px-4 py-2">{{ $order->price }}</td>
