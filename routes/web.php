@@ -9,4 +9,4 @@ Route::get('/', function () {
 
 Route::get('/orders', function () {
     return view('orders');
-});
+}); // let's learn edit
