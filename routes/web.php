@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\OrderController;
+use App\Livewire\OrderComponent;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
